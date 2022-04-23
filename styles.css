@@ -1,0 +1,247 @@
+/* ========================== CSS Reset ========================== */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin and padding
+  */
+* {
+    margin: 0;
+    padding: 0;
+    font-variant-ligatures: none;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== */
+
+body {
+    background-color: white;
+    font-family: "Spartan", sans-serif;
+    text-align: center;
+}
+
+.heading {
+    color: hsl(300, 43%, 22%);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+    margin: 82px 65px 0;
+}
+
+.paragraph {
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    margin: 23px 28px 0;
+}
+
+.rating-container {
+    margin: 39px 24px 50px;
+}
+
+.rating-card {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.star {
+    display: flex;
+    padding: 16px 0;
+    justify-content: center;
+}
+
+.star img {
+    padding-right: 8px;
+}
+
+.star img:last-child {
+    padding-right: 0;
+}
+
+.rating {
+    color: hsl(300, 43%, 22%);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    padding-bottom: 15px;
+}
+
+.review-card {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+    margin: 16px 24px;
+}
+
+.review-card:last-child {
+    margin-bottom: 99px;
+}
+
+.avatar img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.reviewer-name {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    padding-top: 4px;
+}
+
+.tag {
+    color: hsl(333, 80%, 67%);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin-top: 5px;
+}
+
+.reviewer {
+    display: flex;
+    text-align: start;
+    margin-left: 32px;
+    padding-top: 40px;
+}
+.author {
+    margin-left: 23px;
+    line-height: 15px;
+}
+
+.review {
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    margin-top: 27px;
+    padding-bottom: 31px;
+    margin-left: 32px;
+    text-align: start;
+    width: 262px;
+}
+
+
+@media (min-width: 375px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: start;
+    }
+
+    .main {
+        
+    }
+
+    .flex-wrapper {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 47px;
+        line-height: 48px;
+        letter-spacing: -0.025em;
+        width: 368px;
+        margin: 0;
+        
+    }
+
+    .paragraph {
+        width: 425px;
+        margin: 0;
+        margin-top: 13px;
+    }
+
+    .review-container {
+        display: flex;
+        margin-top: 71px;
+    }
+
+    .review-card {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    .review-card:last-child {
+        margin-bottom: 0;
+        /* margin-right: 30px; */
+    }
+
+    .rating-container {
+        margin: 0;
+        margin-left: 145px;
+    }
+    .rating-card {
+        display: flex;
+        width: 445px;
+    }
+
+    .rating-card:nth-of-type(2) {
+        transform: translateX(48px);
+    }
+
+    .rating-card:nth-of-type(3) {
+        transform: translateX(96px);
+    }
+
+    .star {
+        padding: 20px 32px;
+    }
+
+    .rating {
+        padding: 20px 0;
+    }
+
+    .review-card:nth-of-type(2) {
+        transform: translateY(16px);
+    }
+
+    .review-card:nth-of-type(3) {
+        transform: translateY(32px);
+    }
+
+    .review {
+        margin: 27px 32px 39px;
+        width: 285px;
+        padding-bottom: 0;
+    }
+}
